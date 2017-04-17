@@ -8,6 +8,10 @@ start carnd-term1-starter-kit and share the current folder as a volume using 'pw
 ```
 docker run -it --rm -p 8888:8888 -v `pwd`:/src udacity/carnd-term1-starter-kit
 ```
+start bash
+```
+docker run -it --rm  -v `pwd`:/src udacity/carnd-term1-starter-kit bash
+```
 
 Anaconda and jupyter on windows
 ```
