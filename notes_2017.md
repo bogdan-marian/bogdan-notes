@@ -18,3 +18,15 @@ Anaconda and jupyter on windows
 activate carnd-term1
 jupyter notebook
 ```
+## run jupyter on amazon cloud
+enable port forwording on the local machine with inclooded authentication
+```
+ssh -f -i "AmazonOhio.pem" ubuntu@ec2-18-221-253-111.us-east-2.compute.amazonaws.com -L 8889:localhost:8889 -N
+```
+
+connect
+```
+ssh -i "AmazonOhio.pem" ubuntu@ec2-18-221-253-111.us-east-2.compute.amazonaws.com
+
+```
+start the jupyer notebook and connect as you ould normaly woud
