@@ -30,3 +30,10 @@ ssh -i "AmazonOhio.pem" ubuntu@ec2-18-221-253-111.us-east-2.compute.amazonaws.co
 
 ```
 start the jupyer notebook and connect as you ould normaly woud
+
+## lounch nvidia-docker
+```
+nvidia-docker run -it --rm -p 8888:8888 -v `pwd`:/src tensorflow/tensorflow:latest-gpu bash
+```
+it allso starts by default jupyter notebook so you can just ignore bash if you do not want to do extra things inside the container
+
