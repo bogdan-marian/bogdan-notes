@@ -5,3 +5,11 @@
 npm install
 npm start
 ```
+## usefull pakages
+To help us with our filtering we'll need the following packages:
+escape-string-regexp
+sort-by
+```bash
+npm install --save escape-string-regexp sort-by
+```
+
